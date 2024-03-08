@@ -160,6 +160,15 @@ class Yatzy:
             if (t[i] >= 3):
                 return (i+1) * 3
         return 0
+
+    @staticmethod
+    def crazy_chance(self):
+        sum = 0
+        residuo = self.dice[0] % 2
+
+        for i in range(len(self.dice)):
+            if (self.dice[i] % 2 == residuo and )
+
     
 
     @staticmethod

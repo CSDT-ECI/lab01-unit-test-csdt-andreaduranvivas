@@ -71,8 +71,33 @@ def test_fours_sumOfFour():
 
         assert expected == game.fours()
 
-def 
-        
+def test_crazyChance_allPairs():
+
+        dice = [2, 4, 6, 2, 2]
+        game = Yatzy(dice[0], dice[1], dice[2], dice[3], dice[4])
+
+        expected = 48
+
+        assert expected == game.crazy_chance()
+
+
+def test_crazyChance_allImpairs():
+
+        dice = [1, 1, 3, 5, 5]
+        game = Yatzy(dice[0], dice[1], dice[2], dice[3], dice[4])
+
+        expected = 30
+
+        assert expected == game.crazy_chance()
+
+def test_crazyChance_Mixed():
+
+        dice = [2, 4, 3, 5, 6]
+        game = Yatzy(dice[0], dice[1], dice[2], dice[3], dice[4])
+
+        expected = 52
+
+        assert expected == game.crazy_chance()
 
 
 
